@@ -41,8 +41,8 @@ introduced in our paper is the *G-function*, which is defined by
 ```
 
 In our paper, we show how the value of $`I_{x,y}^{\mu,p}`$ can be
-derived from normalized quantity which has the avantage to not being
-subject to underflow or overflow issues on a large domain.
+derived from this normalized quantity which has the avantage to not
+being subject to underflow or overflow issues on a large domain.
    
 Feel free to use and adapt this code. However, if you use it for your
 research or in software code, please be so kind as to cite the paper.
