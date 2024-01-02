@@ -238,9 +238,9 @@ Let us comment this result line by line:
 
 + **lines 8-12**: $`I_{x,y}^{\mu,p}`$ was first computed with a
   mantissa-exponent representation of the type $`I_{x,y}^{\mu,p} =
-  \text{rho}\cdotexp(\text{sigma})`$, where rho and sigma where evaluated
-  in double precision (their computed values are displayed in
-  scientific notation with 17 digits of precision).
+  \text{rho}\cdot exp(\text{sigma})`$, where rho and sigma where
+  evaluated in double precision (their computed values are displayed
+  in scientific notation with 17 digits of precision).
 
 ### Compilation of the MEX files (for Matlab interfacing only)
 
