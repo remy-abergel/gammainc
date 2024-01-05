@@ -29,7 +29,7 @@
 /* Definition of the G-function
  * ----------------------------
  *
- * We define the function G : (p,x) --> R as follows
+ * We define the function G : (p,x) --> G(p,x) as follows
  *
  * if x <= p:
  *
@@ -56,7 +56,7 @@
  * where
  *
  *  + mu is a real number non equal to zero (in general we take mu = 1 or -1 but
- *  any nonzero real number is allowed)
+ *    any nonzero real number is allowed)
  *
  *  + x and y are two nonnegative real numbers such as 0 <= x <= y <= +infinity,
  *    the setting y=+infinity is allowed only when mu > 0
