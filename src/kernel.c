@@ -64,8 +64,8 @@
  *  + p is positive real number, p must be an integer when mu < 0.
  *
  *
- * * Brief description of several modules
- * --------------------------------------
+ * Brief description of several modules
+ * ------------------------------------
  *
  *   + Gammaln approximates the log of the complete gamma function
  *
