@@ -8,8 +8,8 @@ function [rho,sigma,strval] = deltagammainc(x,y,mu,p)
 %  rho*exp(sigma) = 
 %         I_{x,y}^{mu,p} := integral over [x,y] of s^(p-1)*exp(-mu*s) ds
 % 
-% for 0 <= x <= y <= infinity, mu ~= 0 and p > 0 (p must be integer when mu
-% < 0).
+% for 0 <= x <= y <= infinity, mu ~= 0 and p > 0 (when mu < 0, p must be 
+% integer and y must be finite).
 %
 % Inputs : (x,y,mu,p) can be scalar or higher dimensional arrays
 % with same number of elements.
@@ -47,8 +47,8 @@ if(3 ~= exist("deltagammainc_mexinterface","file"))
 end
 
 %% Check consistency
-if(~all(isfinite(x(x<0))))
-    error("x = -inf is not allowed");
+if(~all(x>=0))
+    error("x must be >= 0");
 end
 if(~all(x<=y))
     error("x must be less or equal to y");
@@ -58,6 +58,9 @@ if(~all(mu~=0))
 end
 if(~all(p(mu<0) == floor(p(mu<0))))
     error("p must have integer value when mu < 0");
+end
+if(~all(isfinite(y(mu<0))))
+    error("y = +inf is not allowed when mu < 0");
 end
 
 %% Core of the module
