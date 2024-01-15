@@ -22,15 +22,16 @@ Evaluation of a Generalized Incomplete Gamma Function*, ACM
 Transactions on Mathematical Software, Volume 46, Issue 1, March 2020,
 DOI : [10.1145/3365983](https://doi.org/10.1145/3365983).
 
-In this paper, we show that the *admissible parameter range* for our
-algorithm is $0 \leq x,y,p \leq 10^{15}$ (in standard double floating
-point precision) and the accuracy reached by our algorithm is
-essentially optimal considering the limitations imposed by the
-floating point arithmetic. This large range of admissible parameters
-is made possible by using an appropriate normalization of the
-generalized incomplete gamma integral, different from the classical
-normalization by the complete Gamma integral. The normalized quantity
-introduced in our paper is the *G-function*, which is defined by
+The *admissible parameter range* for our algorithm is $0 \leq x,y\leq
+10^{15}$ and $\varepsilon_{\text{machine}} < p \leq 10^{15}$ (in
+standard double floating point precision) and, in our paper, we show
+that the accuracy reached by our algorithm is essentially optimal
+considering the limitations imposed by the floating point
+arithmetic. This large range of admissible parameters is made possible
+by using an appropriate normalization of the generalized incomplete
+gamma integral, different from the classical normalization by the
+complete Gamma integral. The normalized quantity introduced in our
+paper is the *G-function*, which is defined by
 
 ```math
 \forall x\in\mathbb{R}\cup\{+\infty\}\,,~\forall p > 0\,,\quad G(p,x) = 
