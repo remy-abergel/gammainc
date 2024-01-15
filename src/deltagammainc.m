@@ -47,14 +47,17 @@ if(3 ~= exist("deltagammainc_mexinterface","file"))
 end
 
 %% Check consistency
+if(0 ~= max(abs(numel(x)-[numel(y),numel(mu),numel(p)])))
+    error("inputs x, y, mu and p must have the same number of elements");
+end
 if(~all(x>=0))
     error("x must be >= 0");
 end
-if(~all(x<=y))
+if(~all(x(:)<=y(:)))
     error("x must be less or equal to y");
 end
 if(~all(mu~=0))
-    error("mu = 0 is not allowed")
+    error("mu = 0 is not allowed");
 end
 if(~all(p(mu<0) == floor(p(mu<0))))
     error("p must have integer value when mu < 0");
