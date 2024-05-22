@@ -86,13 +86,13 @@ content is summarized below.
 
 | source file name             | description |
 |------------------------------|-------------|
-| [kernel.c](src/kernel.c)                     | this file contains **public routines** for the evaluation of the G-function and the generalized incomplete gamma function, using either some continued fractions, a recursive integration by parts or a Romberg approximation. |
-| [Gfunc.c](src/Gfunc.c)                      | **command line interface** for the computation of the G-function. The input parameters $`(p,x)`$ must be entered by the user, then, the program displays the value of $`G(p,x)`$ on the standard output with 17 digits of precision. |
-| [deltagammainc.c](src/deltagammainc.c)              | **command line interface** for the computation of the of the generalized incomplete gamma function, $`I_{x,y}^{\mu,p}`$, with a mantissa-exponent representation. The input parameters $`(x,y,\mu,p)`$ must be entered by the user. The computation method for the integral is automatically selected by the algorithm, according to the value of $`(x,y,\mu,p)`$. This program displays into the standard output the following quantities:<br><br>- The computed **mantissa** $`\rho`$, with 17 digits (double precision)<br>- The computed **exponent** $`\sigma`$, with 17 digits (double precision)<br>- The **value of the integral** $`\rho\cdot e^{\sigma}`$, with 17 digits. |
-| [deltagammainc_mexinterface.c](src/deltagammainc_mexinterface.c) | **MEX interface** for the computation of the generalized incomplete gamma function $`I_{x,y}^{\mu,p}`$ from MATLAB. |
-| [deltagammainc.m](src/deltagammainc.m)              | **MATLAB wrapper** calling the MEX interface (after performing consistency checks of the inputs) and performing the (string) base 10 scientific notation formatting of the computed integral. |
-| [INSTALL](src/INSTALL)                      | executable file for C-module **compilation** (bash) |
-| [kernel.h](src/kernel.h)                     | **header** file |
+| [kernel.c](./src/kernel.c)                     | this file contains **public routines** for the evaluation of the G-function and the generalized incomplete gamma function, using either some continued fractions, a recursive integration by parts or a Romberg approximation. |
+| [Gfunc.c](./src/Gfunc.c)                      | **command line interface** for the computation of the G-function. The input parameters $`(p,x)`$ must be entered by the user, then, the program displays the value of $`G(p,x)`$ on the standard output with 17 digits of precision. |
+| [deltagammainc.c](./src/deltagammainc.c)              | **command line interface** for the computation of the of the generalized incomplete gamma function, $`I_{x,y}^{\mu,p}`$, with a mantissa-exponent representation. The input parameters $`(x,y,\mu,p)`$ must be entered by the user. The computation method for the integral is automatically selected by the algorithm, according to the value of $`(x,y,\mu,p)`$. This program displays into the standard output the following quantities:<br><br>- The computed **mantissa** $`\rho`$, with 17 digits (double precision)<br>- The computed **exponent** $`\sigma`$, with 17 digits (double precision)<br>- The **value of the integral** $`\rho\cdot e^{\sigma}`$, with 17 digits. |
+| [deltagammainc_mexinterface.c](./src/deltagammainc_mexinterface.c) | **MEX interface** for the computation of the generalized incomplete gamma function $`I_{x,y}^{\mu,p}`$ from MATLAB. |
+| [deltagammainc.m](./src/deltagammainc.m)              | **MATLAB wrapper** calling the MEX interface (after performing consistency checks of the inputs) and performing the (string) base 10 scientific notation formatting of the computed integral. |
+| [INSTALL](./src/INSTALL)                      | executable file for C-module **compilation** (bash) |
+| [kernel.h](./src/kernel.h)                     | **header** file |
 				   
 ### Compilation of the C modules
 
@@ -354,7 +354,8 @@ $`(x,y,\mu,p) = (10,200,1,300)`$.
   8145)](https://map5.mi.parisdescartes.fr/), 45 rue des Saints-Pères
   75270 Paris Cedex 06, FRANCE.
 
-  If you have any comments, questions, or suggestions regarding NFFT, don't hesitate to email at	
+  If you have any comments, questions, or suggestions regarding this
+  code, don't hesitate to email at
 
   [Remy.Abergel@parisdescartes.fr](mailto:Remy.Abergel@parisdescartes.fr) <br>
   [Lionel.Moisan@parisdescartes.fr](mailto:Lionel.Moisan@parisdescartes.fr)
