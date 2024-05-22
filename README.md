@@ -352,10 +352,14 @@ $`(x,y,\mu,p) = (10,200,1,300)`$.
   This work was done at [Université Paris Cité](https://u-paris.fr/),
   [Laboratoire MAP5 (CNRS UMR
   8145)](https://map5.mi.parisdescartes.fr/), 45 rue des Saints-Pères
-  75270 Paris Cedex 06, FRANCE. If you use, adapt or improve the code,
-  we would love to hear about it!
+  75270 Paris Cedex 06, FRANCE.
+
+  If you have any comments, questions, or suggestions regarding NFFT, don't hesitate to email at	
 
   [Remy.Abergel@parisdescartes.fr](mailto:Remy.Abergel@parisdescartes.fr) <br>
   [Lionel.Moisan@parisdescartes.fr](mailto:Lionel.Moisan@parisdescartes.fr)
+
+  Also, if you find this code useful, we would be delighted to now
+  about what application you are using it for.
 
   Rémy Abergel & Lionel Moisan.
