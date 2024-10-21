@@ -321,17 +321,17 @@ $`(x,y,\mu,p) = (10,200,1,300)`$.
 
   DELTAGAMMAINC Fast and Accurate Evaluation of a Generalized
   Incomplete Gamma Function. Copyright (C) 2016 Remy Abergel
-  (remy.abergel AT parisdescartes.fr), Lionel Moisan (Lionel.Moisan AT
-  parisdescartes.fr).
+  (remy.abergel AT u-paris.fr), Lionel Moisan (Lionel.Moisan AT
+  u-paris.fr).
 
   DELTAGAMMAINC is a software dedicated to the computation of a
   generalized incomplete gammafunction. See the Companion paper for a
-  complete description of the algorithm.
+  complete description of the algorithm:
 
   R. Abergel and L. Moisan. ``Algorithm 1006: Fast and Accurate
   Evaluation of a Generalized Incomplete Gamma Function'', ACM
   Transactions on Mathematical Software, Volume 46, Issue 1, March
-  2020, DOI : https://doi.org/10.1145/3365983.
+  2020, DOI : <https://doi.org/10.1145/3365983>.
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -344,8 +344,7 @@ $`(x,y,\mu,p) = (10,200,1,300)`$.
   General Public License for more details.
 
   You should have received a copy of the GNU General Public License
-  along with this program.  If not, see
-  <http://www.gnu.org/licenses/>.
+  along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ## Contact
 
@@ -355,10 +354,9 @@ $`(x,y,\mu,p) = (10,200,1,300)`$.
   75270 Paris Cedex 06, FRANCE.
 
   If you have any comments, questions, or suggestions regarding this
-  code, don't hesitate to email at
-
-  [Remy.Abergel@parisdescartes.fr](mailto:Remy.Abergel@parisdescartes.fr) <br>
-  [Lionel.Moisan@parisdescartes.fr](mailto:Lionel.Moisan@parisdescartes.fr)
+  code, or if you find a bug, don't hesitate to open a
+  [discussion](https://github.com/remy-abergel/gammainc/discussions)
+  or a [bug issue](https://github.com/remy-abergel/gammainc/issues).
 
   Also, if you find this code useful, we would be delighted to now
   about what application you are using it for.
